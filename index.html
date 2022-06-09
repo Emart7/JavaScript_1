@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Buona Vita Nutrición</title>
+	<title>Buena Vida Nutrición</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -14,7 +14,7 @@
 
 	<header>
 		<div class="container">
-			<h1 class="titulo">Buona Vita Nutrición</h1>
+			<h1 class="titulo">Buena Vida Nutrición</h1>
 		</div>
 	</header>
 	<main>
@@ -49,8 +49,8 @@
 
 					<tr class="paciente">
 						<td class="info-nombre">Erica</td>
-						<td class="info-peso">4</td>
-						<td class="info-altura">5</td>
+						<td class="info-peso">62</td>
+						<td class="info-altura">1.75</td>
 						<td class="info-gordura">14</td>
 						<td class="info-imc">0</td>
 					</tr>
@@ -75,8 +75,35 @@
 		</section>
 	</main>
 
+	<section class="container">
+		<h2 id="titulo-form">Adicionar nuevo paciente</h2>
+		<form" id="form-adicionar">
+			<div class="grupo">
+				<label for="nombre">Nombre:</label>
+				<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+			</div>
+			<div class="grupo">
+				<label for="peso">Peso:</label>
+				<input id="peso" name="peso" type="text" placeholder="digite el peso del paciente"
+					class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="altura">Altura:</label>
+				<input id="altura" name="altura" type="text" placeholder="digite la altura del paciente"
+					class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="gordura">% de Gordura:</label>
+				<input id="gordura" type="text" placeholder="digite el porcentaje de gordura del paciente"
+					class="campo campo-medio">
+			</div>
+			<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+			</form>
+	</section>
+
 	<!-- Importación de los Javascripts AQUÍ -->
-	<script src="js/principal.js"></script>
+	<script src="js/calcular-imc.js"></script>
+	<script src="js/form.js"></script>
 
 </body>
 
